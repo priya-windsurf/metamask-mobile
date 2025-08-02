@@ -34,4 +34,10 @@ module.exports = {
   ],
   testEnvironment: 'detox/runners/jest/testEnvironment',
   verbose: true,
+  preset: 'ts-jest/presets/js-with-ts',
+  transform: {
+    '^.+\\.(ts|tsx)$': 'ts-jest',
+    '^.+\\.(js|jsx)$': 'babel-jest',
+  },
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
 };

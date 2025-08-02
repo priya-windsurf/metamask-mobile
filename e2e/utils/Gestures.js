@@ -10,6 +10,7 @@ class Gestures {
    * Helper function to add delay before performing an action.
    * Useful when elements are visible but not fully interactive yet.
    *
+   * @deprecated Use proper waiting with framework utilities instead of arbitrary delays
    * @param {number} delayMs - Delay in milliseconds
    * @returns {Promise<void>}
    */
@@ -22,6 +23,7 @@ class Gestures {
   /**
    * Tap an element and long press.
    *
+   * @deprecated Use Gestures.longPress() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The element to tap
    * @param {number} timeout - Timeout for waiting (default: 2000ms)
    */
@@ -32,6 +34,7 @@ class Gestures {
   /**
    * Tap an element at a specific point.
    *
+   * @deprecated Use Gestures.tapAtPoint() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The element to tap
    * @param {Object} point - Coordinates { x, y } where the element will be tapped
    */
@@ -42,6 +45,7 @@ class Gestures {
   /**
    * Wait for an element to be visible and then tap it.
    *
+   * @deprecated Use Gestures.tap() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The element to tap
 
    */
@@ -52,6 +56,7 @@ class Gestures {
   /**
    * Tap an element with text partial text matching before tapping it
    *
+   * @deprecated Use Matchers.getElementByText() with regex and Gestures.tap() from framework instead for better error handling and retry mechanisms
    * @param {string} textPattern - Regular expression pattern to match the text
    */
   static async tapTextBeginingWith(textPattern) {
@@ -61,6 +66,7 @@ class Gestures {
   /**
    * Wait for an element to be visible and then tap it.
    *
+   * @deprecated Use Gestures.waitAndTap() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement | Detox.SystemElement>} elementToTap - The element to tap
    * @param {Object} [options={}] - Configuration options
    * @param {number} [options.timeout=15000] - Timeout for waiting in milliseconds
@@ -89,6 +95,7 @@ class Gestures {
   /**
    * Wait for an element at a specific index to be visible and then tap it.
    *
+   * @deprecated Use Gestures.tapAtIndex() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The element to tap
    * @param {number} index - Index of the element to tap
    * @param {number} timeout - Timeout for waiting (default: 15000ms)
@@ -102,6 +109,7 @@ class Gestures {
   /**
    * Wait for an element to be visible and then tap it.
    *
+   * @deprecated Use Gestures.tap() from framework with web elements instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableWebElement>} element - The element to tap
    * @param {Object} options - Options for the tap operation
    * @param {number} [options.timeout=15000] - Timeout for waiting (default: 15000ms)
@@ -130,6 +138,7 @@ class Gestures {
 
   /**
    * Type text into a web element within a webview using JavaScript injection.
+   * @deprecated Use Gestures.typeText() from framework with web elements instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableWebElement>} element - The web element to type into.
    * @param {string} text - The text to type.
    */
@@ -154,6 +163,7 @@ class Gestures {
   /**
    * Double tap an element by text.
    *
+   * @deprecated Use Gestures.dblTap() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The element to double tap
    */
   static async doubleTap(element) {
@@ -163,6 +173,7 @@ class Gestures {
   /**
    * Clear the text field of an element identified by ID.
    *
+   * @deprecated Use Gestures.typeText() with clearFirst option or Gestures.replaceText() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The element to clear
    * @param {number} timeout - Timeout for waiting (default: 8000ms)
 
@@ -178,6 +189,7 @@ class Gestures {
   /**
    * Type text into an element and hide the keyboard.
    *
+   * @deprecated Use Gestures.typeText() with hideKeyboard option from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement | Detox.NativeElement | Detox.IndexableSystemElement>} element - The element to type into
    * @param {string} text - Text to be typed into the element
    */
@@ -190,6 +202,7 @@ class Gestures {
   /**
    * Type text into an element without hiding the keyboard.
    *
+   * @deprecated Use Gestures.typeText() with hideKeyboard: false option from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The element to type into
    * @param {string} text - Text to be typed into the element
    */
@@ -200,6 +213,7 @@ class Gestures {
   /**
    * Replace the text in the field of an element identified by ID.
    *
+   * @deprecated Use Gestures.replaceText() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The element to replace the text in
    * @param {string} text - Text to replace the existing text in the element
    */
@@ -214,6 +228,7 @@ class Gestures {
   /**
    * Swipe on an element identified by ID.
    *
+   * @deprecated Use Gestures.swipe() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The element to swipe on
    * @param {Detox.Direction} direction - Direction of the swipe - left | right | top | bottom | up | down
    * @param {Detox.Speed} [speed] - Speed of the swipe (fast, slow)
@@ -228,6 +243,7 @@ class Gestures {
   /**
    * Swipe on an element identified by ID.
    *
+   * @deprecated Use Gestures.swipe() from framework with element.atIndex() instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The element to swipe on
    * @param {Detox.Direction} direction - Direction of the swipe - left | right | top | bottom | up | down
    * @param {Detox.Speed} [speed] - Speed of the swipe (fast, slow)
@@ -252,6 +268,7 @@ class Gestures {
 
   /**
    * Scrolls the web element until its top is at the top of the viewport.
+   * @deprecated Use Gestures.scrollToWebViewPort() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Element>} element - The element to scroll to the viewport.
    */
   static async scrollToWebViewPort(element) {
@@ -261,6 +278,7 @@ class Gestures {
   /**
    * Dynamically Scrolls to an element identified by ID.
    *
+   * @deprecated Use Gestures.scrollToElement() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} destinationElement - The element to scroll up to
    * @param {Promise<Detox.NativeMatcher>} scrollIdentifier - The identifier (by.id) NOT element (element(by.id)). Keep this distinction in mind. If you pass in an elementID this method would not work as intended
    * @param {Detox.Direction} direction - Direction of the scroll (up, down, left, right). The default is down.

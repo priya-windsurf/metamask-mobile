@@ -11,6 +11,7 @@ const TIMEOUT = 15000;
 class Assertions {
   /**
    * Check if an element with the specified ID is visible.
+   * @deprecated Use Assertions.expectElementToBeVisible() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement | Detox.IndexableSystemElement | Detox.NativeElement>} element - The element to check.
    * @param timeout
    */
@@ -26,6 +27,7 @@ class Assertions {
 
   /**
    * Check if an element with the specified web selector exists.
+   * @deprecated Use Assertions.expectElementToBeVisible() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement | Detox.IndexableSystemElement | Detox.NativeElement>} element - The element to check.
    */
   static async webViewElementExists(element) {
@@ -35,6 +37,7 @@ class Assertions {
 
   /**
    * Check if an element with the specified ID is not visible.
+   * @deprecated Use Assertions.expectElementToNotBeVisible() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement | Detox.IndexableSystemElement | Detox.NativeElement>} element - The element to check.
    * @param {number} [timeout=TIMEOUT] - Timeout in milliseconds.
    */
@@ -46,6 +49,7 @@ class Assertions {
 
   /**
    * Check if an element with the specified ID does have the specified text.
+   * @deprecated Use Assertions.expectElementToHaveText() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement | Detox.IndexableSystemElement | Detox.NativeElement>} element - The element to check.
    * @param {string} text - The text content to check.
    * @param {number} [timeout=TIMEOUT] - Timeout in milliseconds.
@@ -60,6 +64,7 @@ class Assertions {
 
   /**
    * Check if an element with the specified ID does have the specified label.
+   * @deprecated Use Assertions.expectElementToHaveLabel() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The element to check.
    * @param {string} label - The label content to check.
    * @param {number} [timeout=TIMEOUT] - Timeout in milliseconds.
@@ -72,6 +77,7 @@ class Assertions {
 
   /**
    * Check if text is visible.
+   * @deprecated Use Assertions.expectTextDisplayed() from framework instead for better error handling and retry mechanisms
    * @param {string} text - The text to check if displayed.
    * @param {number} [index=0] - Index of the element if multiple elements match.
    * @param {number} [timeout=TIMEOUT] - Timeout in milliseconds.
@@ -83,6 +89,7 @@ class Assertions {
 
   /**
    * Check if text is not visible.
+   * @deprecated Use Assertions.expectTextNotDisplayed() from framework instead for better error handling and retry mechanisms
    * @param {string} text - The text to check if not displayed.
    * @param {number} [index=0] - Index of the element if multiple elements match.
    * @param {number} [timeout=TIMEOUT] - Timeout in milliseconds.
@@ -94,6 +101,7 @@ class Assertions {
 
   /**
    * Check if an element with the specified ID does not have the specified text.
+   * @deprecated Use Assertions.expectElementToNotHaveText() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The element to check.
    * @param {string} text - The text content to check.
    * @param {number} [timeout=TIMEOUT] - Timeout in milliseconds.
@@ -108,6 +116,7 @@ class Assertions {
 
   /**
    * Check if an element with the specified ID does not have the specified label.
+   * @deprecated Use Assertions.expectElementToNotBeVisible() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The element to check.
    * @param {string} label - The label content to check.
    * @param {number} [timeout=TIMEOUT] - Timeout in milliseconds.
@@ -126,6 +135,7 @@ class Assertions {
 
   /**
    * Check if the toggle with the specified ID is in the "on" state.
+   * @deprecated Use Assertions.expectToggleToBeOn() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The ID of the toggle element.
    */
   static async checkIfToggleIsOn(element) {
@@ -134,6 +144,7 @@ class Assertions {
 
   /**
    * Check if the toggle with the specified ID is in the "off" state.
+   * @deprecated Use Assertions.expectToggleToBeOff() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The toggle element.
    */
   static async checkIfToggleIsOff(element) {
@@ -359,6 +370,7 @@ class Assertions {
 
   /**
    * Check if element is enabled
+   * @deprecated Use Utilities.checkElementEnabled() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The element to check
    * @return {Promise<boolean>} - Resolves to true if the element is enabled, false otherwise
    */
@@ -368,6 +380,7 @@ class Assertions {
 
   /**
    * Check if element is disabled
+   * @deprecated Use Utilities.checkElementEnabled() from framework instead for better error handling and retry mechanisms
    * @param {Promise<Detox.IndexableNativeElement>} element - The element to check
    * @return {Promise<boolean>} - Resolves to true if the element is disabled, false otherwise
    */
@@ -377,6 +390,7 @@ class Assertions {
 
   /**
    * Check if label contains text
+   * @deprecated Use Matchers.getElementByLabel() with Assertions.expectElementToBeVisible() from framework instead for better error handling and retry mechanisms
    * @param {string} text - The text to check if the label contains
    * @param {number} [timeout=TIMEOUT] - Timeout in milliseconds.
    */

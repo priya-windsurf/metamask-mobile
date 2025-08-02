@@ -12,7 +12,7 @@ import { withFixtures } from '../../fixtures/fixture-helper';
 import FixtureBuilder from '../../fixtures/fixture-builder';
 import TestHelpers from '../../helpers';
 import WalletView from '../../pages/wallet/WalletView';
-import Assertions from '../../utils/Assertions';
+import { Assertions } from '../../framework';
 
 const SAI_CONTRACT_ADDRESS: string =
   '0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359';
