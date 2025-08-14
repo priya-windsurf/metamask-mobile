@@ -9,6 +9,14 @@ export interface ValidState {
   security: Record<string, unknown>;
 }
 
+export interface MigrationState extends ValidState {
+  user?: {
+    existingUser?: boolean;
+    [key: string]: unknown;
+  };
+  [key: string]: unknown;
+}
+
 export function ensureValidState<T>(
   state: T,
   migrationNumber: number,

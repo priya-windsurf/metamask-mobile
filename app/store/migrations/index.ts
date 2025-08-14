@@ -1,4 +1,4 @@
-import { MigrationManifest } from 'redux-persist';
+import { MigrationManifest, PersistedState } from 'redux-persist';
 
 import migration00 from './000';
 import migration01 from './001';
@@ -94,13 +94,21 @@ import migration90 from './090';
 
 // Add migrations above this line
 import { validatePostMigrationState } from '../validateMigration/validateMigration';
+import { MigrationState } from './util';
 import { RootState } from '../../reducers';
 
-type MigrationFunction = (state: unknown) => unknown;
-type AsyncMigrationFunction = (state: unknown) => Promise<unknown>;
+type MigrationFunction = (state: MigrationState) => MigrationState;
+type AsyncMigrationFunction = (
+  state: Promise<MigrationState> | MigrationState,
+) => Promise<MigrationState>;
+type LegacyMigrationFunction = (state: unknown) => unknown;
+type LegacyAsyncMigrationFunction = (state: unknown) => Promise<unknown>;
 export type MigrationsList = Record<
   string,
-  MigrationFunction | AsyncMigrationFunction
+  | MigrationFunction
+  | AsyncMigrationFunction
+  | LegacyMigrationFunction
+  | LegacyAsyncMigrationFunction
 >;
 
 /**
@@ -201,28 +209,30 @@ export const migrationList: MigrationsList = {
 };
 
 // Enable both synchronous and asynchronous migrations
-export const asyncifyMigrations = (
+export const asyncifyMigrations = <T extends MigrationState>(
   inputMigrations: MigrationsList,
-  onMigrationsComplete?: (state: unknown) => void,
-) =>
+  onMigrationsComplete?: (state: T) => void,
+): Record<string, AsyncMigrationFunction> =>
   Object.entries(inputMigrations).reduce(
     (newMigrations, [migrationNumber, migrationFunction]) => {
       // Handle migrations as async
       const asyncMigration = async (
-        incomingState: Promise<unknown> | unknown,
-      ) => {
+        incomingState: Promise<MigrationState> | MigrationState,
+      ): Promise<MigrationState> => {
         const state = await incomingState;
-        const migratedState = await migrationFunction(state);
+        const migratedState = await (
+          migrationFunction as (state: unknown) => unknown | Promise<unknown>
+        )(state);
 
         // If this is the last migration and we have a callback, run it
         if (
           onMigrationsComplete &&
           Number(migrationNumber) === Object.keys(inputMigrations).length - 1
         ) {
-          onMigrationsComplete(migratedState);
+          onMigrationsComplete(migratedState as T);
         }
 
-        return migratedState;
+        return migratedState as MigrationState;
       };
       newMigrations[migrationNumber] = asyncMigration;
       return newMigrations;
@@ -230,10 +240,19 @@ export const asyncifyMigrations = (
     {} as Record<string, AsyncMigrationFunction>,
   );
 
-// Convert all migrations to async
-export const migrations = asyncifyMigrations(migrationList, (state) => {
-  validatePostMigrationState(state as RootState);
-}) as unknown as MigrationManifest;
+// Convert all migrations to async and ensure type compatibility with MigrationManifest
+const asyncMigrations = asyncifyMigrations(migrationList, (state) => {
+  validatePostMigrationState(state as unknown as RootState);
+});
+
+export const migrations: MigrationManifest = Object.entries(
+  asyncMigrations,
+).reduce((manifest, [version, migration]) => {
+  manifest[version] = migration as unknown as (
+    state: PersistedState,
+  ) => PersistedState;
+  return manifest;
+}, {} as MigrationManifest);
 
 // The latest (i.e. highest) version number.
 export const version = Object.keys(migrations).length - 1;
