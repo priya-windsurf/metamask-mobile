@@ -14,6 +14,10 @@ export interface MigrationState extends ValidState {
     existingUser?: boolean;
     [key: string]: unknown;
   };
+  _persist?: {
+    version: number;
+    rehydrated: boolean;
+  };
   [key: string]: unknown;
 }
 

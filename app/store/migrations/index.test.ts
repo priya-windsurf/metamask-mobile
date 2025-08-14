@@ -1,4 +1,5 @@
 import { migrationList, asyncifyMigrations, MigrationsList } from './';
+import { MigrationState } from './util/index';
 import {
   MigrationManifest,
   PersistedState,
@@ -62,7 +63,9 @@ describe('asyncifyMigrations', () => {
     // Check that all migrations are Promises
     let isPromiseMigrations = true;
     for (const migrationKey in asyncMigrations) {
-      const migratedState = asyncMigrations[migrationKey](initialState);
+      const migratedState = asyncMigrations[migrationKey](
+        initialState as unknown as MigrationState,
+      );
       if (migratedState.constructor.name !== 'Promise') {
         isPromiseMigrations = false;
         break;
@@ -90,7 +93,9 @@ describe('asyncifyMigrations', () => {
     let state: PersistedState = initialState;
 
     for (const migrationKey in asyncMigrations) {
-      state = (await asyncMigrations[migrationKey](state)) as PersistedState;
+      state = (await asyncMigrations[migrationKey](
+        state as unknown as MigrationState,
+      )) as unknown as PersistedState;
 
       if (Number(migrationKey) === 2) {
         // Should be called exactly once after the last migration
