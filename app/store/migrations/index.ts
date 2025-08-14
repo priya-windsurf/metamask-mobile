@@ -248,9 +248,8 @@ const asyncMigrations = asyncifyMigrations(migrationList, (state) => {
 export const migrations: MigrationManifest = Object.entries(
   asyncMigrations,
 ).reduce((manifest, [version, migration]) => {
-  manifest[version] = (state: PersistedState) => migration(
-      state as unknown as MigrationState,
-    ) as unknown as PersistedState;
+  manifest[version] = (state: PersistedState) =>
+    migration(state as unknown as MigrationState) as unknown as PersistedState;
   return manifest;
 }, {} as MigrationManifest);
 
