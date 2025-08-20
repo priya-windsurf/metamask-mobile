@@ -28,13 +28,14 @@ Install ruby version defined in the file `.ruby-version`
 <details>
   <summary>Troubleshooting</summary>
 
-  ```bash
-    # Inspect that ruby is in path
-    which ruby
+```bash
+  # Inspect that ruby is in path
+  which ruby
 
-    # Ensure you are using the correct ruby version
-    ruby --version
-  ```
+  # Ensure you are using the correct ruby version
+  ruby --version
+```
+
 </details>
 
 ### Gems
@@ -72,30 +73,36 @@ Ensure you are using the correct yarn version (yarn v1) as noted in the `package
 <details>
   <summary>Install Yarn using corepack (recommended)</summary>
 
-  ```bash
-  corepack enable
+```bash
+corepack enable
 
-  # check yarn version
-  yarn --version
-  ```
+# check yarn version
+yarn --version
+```
+
 </details>
 
 <details>
   <summary>Install Yarn V1 with NPM</summary>
 
-  ```bash
-  npm install -g yarn
+```bash
+npm install -g yarn
 
-  # check yarn version
-  yarn --version
-  ```
+# check yarn version
+yarn --version
+```
+
 </details>
 
 ## Android
 
 Install [Android Studio](https://developer.android.com/studio)
 
-- Set environment variable `JAVA_HOME=/Applications/Android Studio.app/Contents/jbr/Contents/Home` to use the Java version shipped with Android Studio
+- Set environment variable `JAVA_HOME` to point to your Java 21 JDK installation:
+  - **macOS**: `JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-21.jdk/Contents/Home` (adjust path based on your Java 21 installation)
+  - **Linux**: `JAVA_HOME=/usr/lib/jvm/java-21-openjdk` (adjust path based on your Java 21 installation)
+  - **Windows**: `JAVA_HOME=C:\Program Files\Java\jdk-21` (adjust path based on your Java 21 installation)
+- **Note**: Java 21 is required for this project. You can download OpenJDK 21 from [https://adoptium.net/](https://adoptium.net/) or use your system's package manager
 - Go to Settings > Languages & Frameworks > Android SDK
 - Shortcut: Selecting `More Actions` > `SDK Manager` from the "Welcome to Android Studio" page will also bring you here.
   - Select `SDK Tools` tab
