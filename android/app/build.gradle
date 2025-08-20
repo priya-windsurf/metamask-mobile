@@ -195,6 +195,15 @@ android {
         manifestPlaceholders.MM_BRANCH_KEY_LIVE = "$System.env.MM_BRANCH_KEY_LIVE"
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
+
+    kotlinOptions {
+        jvmTarget = '21'
+    }
+
 	  packagingOptions {
 		  exclude 'META-INF/DEPENDENCIES'
       pickFirst 'lib/x86/libc++_shared.so'

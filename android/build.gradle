@@ -9,7 +9,7 @@ buildscript {
 		targetSdkVersion = 35
 		ndkVersion = "26.1.10909125"
 		bitriseNdkPath = "/usr/local/share/android-sdk/ndk-bundle"
-		kotlin_version = "1.9.25"
+		kotlin_version = "2.2.10"
 		kotlinVersion = "$kotlin_version"
 		supportLibVersion = "28.0.0"
 	}
@@ -19,7 +19,7 @@ buildscript {
 	}
 
 	dependencies {
-		classpath("com.android.tools.build:gradle")
+		classpath("com.android.tools.build:gradle:8.12.0")
     	classpath("com.facebook.react:react-native-gradle-plugin")
 		classpath("io.sentry:sentry-android-gradle-plugin:4.2.0")
     	classpath("com.google.gms:google-services:4.4.2")
