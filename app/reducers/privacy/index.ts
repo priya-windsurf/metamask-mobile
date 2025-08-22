@@ -1,9 +1,17 @@
-const initialState = {
+import { PrivacyState, PrivacyAction } from './types';
+
+export * from './types';
+
+const initialState: PrivacyState = {
   approvedHosts: {},
   revealSRPTimestamps: [],
 };
 
-const privacyReducer = (state = initialState, action) => {
+const privacyReducer = (
+  // eslint-disable-next-line @typescript-eslint/default-param-last
+  state: PrivacyState = initialState,
+  action: PrivacyAction,
+): PrivacyState => {
   const newHosts = { ...state.approvedHosts };
   switch (action.type) {
     case 'APPROVE_HOST':

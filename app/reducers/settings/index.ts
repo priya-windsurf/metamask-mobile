@@ -1,16 +1,23 @@
 import AppConstants from '../../core/AppConstants';
+import { SettingsState, SettingsAction } from './types';
 
-const initialState = {
+export * from './types';
+
+const initialState: SettingsState = {
   searchEngine: AppConstants.DEFAULT_SEARCH_ENGINE,
   primaryCurrency: 'ETH',
-  lockTime: -1, // Disabled by default
+  lockTime: -1,
   useBlockieIcon: true,
   hideZeroBalanceTokens: false,
   basicFunctionalityEnabled: true,
   deepLinkModalDisabled: false,
 };
 
-const settingsReducer = (state = initialState, action) => {
+const settingsReducer = (
+  // eslint-disable-next-line @typescript-eslint/default-param-last
+  state: SettingsState = initialState,
+  action: SettingsAction,
+): SettingsState => {
   switch (action.type) {
     case 'SET_SEARCH_ENGINE':
       return {
@@ -71,4 +78,5 @@ const settingsReducer = (state = initialState, action) => {
       return state;
   }
 };
+
 export default settingsReducer;
