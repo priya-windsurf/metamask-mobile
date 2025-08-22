@@ -1,9 +1,19 @@
-import { renderScreen } from '../../../util/test/renderWithProvider';
+import {
+  renderScreen,
+  DeepPartial,
+} from '../../../util/test/renderWithProvider';
+import { RootState } from '../../../reducers';
 import LedgerMessageSignModal from './LedgerMessageSignModal';
 import { RPCStageTypes } from '../../../reducers/rpcEvents';
 
-const initialState = {
-  rpcEvents: { signingEvent: RPCStageTypes.IDLE },
+const initialState: DeepPartial<RootState> = {
+  rpcEvents: {
+    signingEvent: {
+      eventStage: RPCStageTypes.IDLE,
+      rpcName: '',
+      error: undefined,
+    },
+  },
 };
 
 describe('LedgerMessageSignModal', () => {

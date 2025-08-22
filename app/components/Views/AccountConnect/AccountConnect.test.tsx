@@ -675,8 +675,8 @@ describe('AccountConnect', () => {
     const parsedOriginalURL = new URL(originalURL);
     const mockState = {
       browser: {
-        activeTab: 1,
-        tabs: [{ id: 1, url: originalURL }],
+        activeTab: '1',
+        tabs: [{ id: '1', url: originalURL }],
       },
       engine: {
         backgroundState: {
@@ -684,7 +684,7 @@ describe('AccountConnect', () => {
           AccountsController: MOCK_ACCOUNTS_CONTROLLER_STATE,
         },
       },
-    };
+    } as Partial<RootState>;
 
     // Create a function for rendering that we can use in our test
     const renderComponent = () =>
@@ -726,7 +726,9 @@ describe('AccountConnect', () => {
 
     // now change the mockState to have a different active tab URL
     const newURL = 'https://different-site.com';
-    mockState.browser.tabs[0].url = newURL;
+    if (mockState.browser?.tabs?.[0]) {
+      mockState.browser.tabs[0].url = newURL;
+    }
     // re-render the component
     result = renderComponent();
     // check that the component with testID 'permission-network-permissions-container' is rendered

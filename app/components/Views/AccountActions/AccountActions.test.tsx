@@ -5,7 +5,9 @@ import { Alert, AlertButton } from 'react-native';
 
 import { fireEvent, waitFor } from '@testing-library/react-native';
 
-import renderWithProvider from '../../../util/test/renderWithProvider';
+import renderWithProvider, {
+  DeepPartial,
+} from '../../../util/test/renderWithProvider';
 
 import Engine from '../../../core/Engine';
 import Routes from '../../../constants/navigation/Routes';
@@ -84,8 +86,7 @@ import {
   selectNetworkConfigurations,
 } from '../../../selectors/networkController';
 
-const initialState = {
-  swaps: { '0x1': { isLive: true }, hasOnboarded: false, isLive: true },
+const initialState: DeepPartial<RootState> = {
   engine: {
     backgroundState: {
       ...backgroundState,
@@ -288,34 +289,9 @@ jest.mock('../../../util/networks', () => {
 });
 
 // Create a state with custom RPC for testing
-const customRpcState = {
+const customRpcState: DeepPartial<RootState> = {
   ...initialState,
-  engine: {
-    ...initialState.engine,
-    backgroundState: {
-      ...initialState.engine.backgroundState,
-      NetworkController: {
-        providerConfig: {
-          type: RPC,
-          rpcUrl: 'https://custom-rpc.com',
-          chainId: '0x1',
-          ticker: 'ETH',
-          nickname: 'Custom Network',
-        },
-      },
-      NetworksController: {
-        networkConfigurations: {
-          'custom-network-id': {
-            rpcUrl: 'https://custom-rpc.com',
-            chainId: '0x1',
-            ticker: 'ETH',
-            blockExplorerUrl: 'https://custom-explorer.com',
-          },
-        },
-      },
-    },
-  },
-} as unknown;
+};
 
 jest.mock('../../../core/Multichain/utils', () => ({
   isNonEvmChainId: jest.fn(() => false),

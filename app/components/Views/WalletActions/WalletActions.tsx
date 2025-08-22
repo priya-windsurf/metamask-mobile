@@ -110,7 +110,15 @@ const WalletActions = () => {
   // Hook for handling non-EVM asset sending
   const assetToSend = selectedAsset?.address ? selectedAsset : nativeAsset;
   const { sendNonEvmAsset } = useSendNonEvmAsset({
-    asset: assetToSend || { chainId, address: undefined },
+    asset: (assetToSend
+      ? {
+          chainId: assetToSend.chainId || chainId,
+          address: assetToSend.address,
+        }
+      : { chainId: chainId as string, address: undefined }) as {
+      chainId: string;
+      address?: string | undefined;
+    },
     closeModal: () => sheetRef.current?.onCloseBottomSheet(),
   });
 
@@ -286,7 +294,7 @@ const WalletActions = () => {
       const { NetworkController, MultichainNetworkController } = Engine.context;
       const networkConfiguration =
         NetworkController.getNetworkConfigurationByChainId(
-          selectedAsset.chainId,
+          selectedAsset.chainId as `0x${string}`,
         );
       const networkClientId =
         networkConfiguration?.rpcEndpoints?.[

@@ -1,10 +1,17 @@
 import { REHYDRATE } from 'redux-persist';
+import { WizardState, WizardAction } from './types';
 
-const initialState = {
+export * from './types';
+
+export const initialState: WizardState = {
   step: 0,
 };
 
-const onboardingWizardReducer = (state = initialState, action) => {
+const onboardingWizardReducer = (
+  // eslint-disable-next-line @typescript-eslint/default-param-last
+  state: WizardState = initialState,
+  action: WizardAction,
+): WizardState => {
   switch (action.type) {
     case REHYDRATE:
       return {
@@ -19,4 +26,5 @@ const onboardingWizardReducer = (state = initialState, action) => {
       return state;
   }
 };
+
 export default onboardingWizardReducer;
