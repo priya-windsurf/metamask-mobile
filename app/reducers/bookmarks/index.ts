@@ -2,7 +2,7 @@ import { BookmarksState, BookmarksAction } from './types';
 
 export * from './types';
 
-const initialState: BookmarksState = [];
+export const initialState: BookmarksState = [];
 
 const bookmarksReducer = (
   // eslint-disable-next-line @typescript-eslint/default-param-last

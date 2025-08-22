@@ -10,7 +10,7 @@ import { RootState } from '../index';
 
 export * from './types';
 
-const initialState: TransactionState = {
+export const initialState: TransactionState = {
   ensRecipient: undefined,
   assetType: undefined,
   selectedAsset: {},

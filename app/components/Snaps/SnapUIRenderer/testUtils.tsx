@@ -2,7 +2,6 @@ import { JSXElement } from '@metamask/snaps-sdk/jsx';
 import React from 'react';
 import renderWithProvider from '../../../util/test/renderWithProvider';
 import { RootState } from '../../../reducers';
-import { PayloadAction } from '@reduxjs/toolkit';
 import { FormState, SnapId } from '@metamask/snaps-sdk';
 import { SnapUIRenderer } from './SnapUIRenderer';
 import { act } from '@testing-library/react-native';
@@ -152,41 +151,7 @@ export function renderInterface(
     { state: storeState as unknown as RootState },
   );
 
-  const reducer = (
-    reducerState: RootState | undefined,
-    action: PayloadAction<{ content: JSXElement; state: FormState }>,
-  ): RootState => {
-    // Handle initial state
-    const currentState = reducerState || result.store.getState();
-
-    if (action.type === 'updateInterface') {
-      return {
-        ...currentState,
-        engine: {
-          ...currentState.engine,
-          backgroundState: {
-            ...currentState.engine.backgroundState,
-            SnapInterfaceController: {
-              interfaces: {
-                [MOCK_INTERFACE_ID]: {
-                  snapId: snapId as SnapId,
-                  content: action.payload.content,
-                  state: action.payload.state ?? state,
-                  context: null,
-                  contentType: null,
-                },
-              },
-            },
-          },
-        },
-      };
-    }
-    return currentState;
-  };
-
   const { store } = result;
-
-  store.replaceReducer(reducer);
 
   const updateInterface = (
     newContent: JSXElement,

@@ -12,41 +12,60 @@ import { initialNavigationState } from '../../reducers/navigation';
 import { initialOnboardingState } from '../../reducers/onboarding';
 import { initialState as initialPerformanceState } from '../../core/redux/slices/performance';
 import { isTest } from './utils';
+
+import { initialState as initialLegalNoticesState } from '../../reducers/legalNotices';
+import { initialState as initialCollectiblesState } from '../../reducers/collectibles';
+import { initialState as initialPrivacyState } from '../../reducers/privacy';
+import { initialState as initialBookmarksState } from '../../reducers/bookmarks';
+import { initialState as initialBrowserState } from '../../reducers/browser';
+import { initialState as initialModalsState } from '../../reducers/modals';
+import { initialState as initialSettingsState } from '../../reducers/settings';
+import { initialState as initialAlertState } from '../../reducers/alert';
+import { initialState as initialTransactionState } from '../../reducers/transaction';
+import { initialState as initialWizardState } from '../../reducers/wizard';
+import { initialState as initialNotificationState } from '../../reducers/notification';
+import { initialState as initialInfuraAvailabilityState } from '../../reducers/infuraAvailability';
+import { initialState as swapsInitialState } from '../../reducers/swaps';
+import { initialState as networkOnboardedInitialState } from '../../reducers/networkSelector';
+import { initialState as signatureRequestInitialState } from '../../reducers/signatureRequest';
+import { initialState as experimentalSettingsInitialState } from '../../reducers/experimentalSettings';
+import { initialState as rpcEventsInitialState } from '../../reducers/rpcEvents';
+import { initialState as accountsInitialState } from '../../reducers/accounts';
 // A cast is needed here because we use enums in some controllers, and TypeScript doesn't consider
 // the string value of an enum as satisfying an enum type.
 export const backgroundState: EngineState =
   initialBackgroundState as unknown as EngineState;
 
 const initialRootState: RootState = {
-  legalNotices: undefined,
-  collectibles: undefined,
+  legalNotices: initialLegalNoticesState,
+  collectibles: initialCollectiblesState,
   engine: { backgroundState },
-  privacy: undefined,
-  bookmarks: undefined,
-  browser: undefined,
-  modals: undefined,
-  settings: undefined,
-  alert: undefined,
-  transaction: undefined,
+  privacy: initialPrivacyState,
+  bookmarks: initialBookmarksState,
+  browser: initialBrowserState,
+  modals: initialModalsState,
+  settings: initialSettingsState,
+  alert: initialAlertState,
+  transaction: initialTransactionState,
   user: userInitialState,
-  wizard: undefined,
+  wizard: initialWizardState,
   onboarding: initialOnboardingState,
-  notification: undefined,
-  swaps: undefined,
+  notification: initialNotificationState,
+  swaps: swapsInitialState,
   fiatOrders: initialFiatOrdersState,
-  infuraAvailability: undefined,
+  infuraAvailability: initialInfuraAvailabilityState,
   navigation: initialNavigationState,
-  networkOnboarded: undefined,
+  networkOnboarded: networkOnboardedInitialState,
   security: initialSecurityState,
-  signatureRequest: undefined,
+  signatureRequest: signatureRequestInitialState,
   sdk: {
     connections: {},
     approvedHosts: {},
     dappConnections: {},
   },
-  experimentalSettings: undefined,
-  rpcEvents: undefined,
-  accounts: undefined,
+  experimentalSettings: experimentalSettingsInitialState,
+  rpcEvents: rpcEventsInitialState,
+  accounts: accountsInitialState,
   inpageProvider: initialInpageProvider,
   confirmationMetrics,
   originThrottling,

@@ -3,7 +3,7 @@ import { RootState } from '../index';
 
 export * from './types';
 
-const initialState: InfuraAvailabilityState = {
+export const initialState: InfuraAvailabilityState = {
   isBlocked: false,
 };
 

@@ -2,7 +2,7 @@ import { PrivacyState, PrivacyAction } from './types';
 
 export * from './types';
 
-const initialState: PrivacyState = {
+export const initialState: PrivacyState = {
   approvedHosts: {},
   revealSRPTimestamps: [],
 };

@@ -5,7 +5,7 @@ import { BrowserState, BrowserAction, AddToViewedDappAction } from './types';
 
 export * from './types';
 
-const initialState: BrowserState = {
+export const initialState: BrowserState = {
   history: [],
   whitelist: [],
   tabs: [],

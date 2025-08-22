@@ -1,6 +1,9 @@
 import React from 'react';
 
-import renderWithProvider from '../../../util/test/renderWithProvider';
+import renderWithProvider, {
+  DeepPartial,
+} from '../../../util/test/renderWithProvider';
+import { RootState } from '../../../reducers';
 
 import { SRPListItemSelectorsIDs } from '../../../../e2e/selectors/MultiSRP/SRPListItem.selectors';
 import { backgroundState } from '../../../util/test/initial-root-state';
@@ -54,8 +57,7 @@ const mockKeyring2 = {
   },
 };
 
-const initialState = {
-  swaps: { '0x1': { isLive: true }, hasOnboarded: false, isLive: true },
+const initialState: DeepPartial<RootState> = {
   engine: {
     backgroundState: {
       ...backgroundState,

@@ -2,7 +2,7 @@ import { AlertState, AlertAction } from './types';
 
 export * from './types';
 
-const initialState: AlertState = {
+export const initialState: AlertState = {
   isVisible: false,
   autodismiss: null,
   content: null,

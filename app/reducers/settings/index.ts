@@ -3,7 +3,7 @@ import { SettingsState, SettingsAction } from './types';
 
 export * from './types';
 
-const initialState: SettingsState = {
+export const initialState: SettingsState = {
   searchEngine: AppConstants.DEFAULT_SEARCH_ENGINE,
   primaryCurrency: 'ETH',
   lockTime: -1,

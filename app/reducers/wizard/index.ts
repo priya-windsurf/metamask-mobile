@@ -3,7 +3,7 @@ import { WizardState, WizardAction } from './types';
 
 export * from './types';
 
-const initialState: WizardState = {
+export const initialState: WizardState = {
   step: 0,
 };
 
