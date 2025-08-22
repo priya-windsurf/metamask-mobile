@@ -31,7 +31,15 @@ const mockInitialState = {
     },
   },
   transaction: {
-    selectedAsset: '',
+    selectedAsset: {
+      isETH: true,
+      symbol: 'ETH',
+      address: '0x0',
+      chainId: '0x1',
+    },
+    transaction: {},
+    securityAlertResponses: {},
+    useMax: false,
   },
 };
 
@@ -76,9 +84,16 @@ describe('BrowserTab', () => {
   });
 
   it('should render correctly', () => {
-    const { toJSON } = renderWithProvider(<BrowserTab {...mockProps} />, {
-      state: mockInitialState,
-    });
+    const { toJSON } = renderWithProvider(
+      <BrowserTab
+        {
+          ...(mockProps as any) /* eslint-disable-line @typescript-eslint/no-explicit-any */
+        }
+      />,
+      {
+        state: mockInitialState,
+      },
+    );
     expect(toJSON()).toMatchSnapshot();
   });
 });

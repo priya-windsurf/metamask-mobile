@@ -14,6 +14,8 @@ export interface SelectedAsset {
   isETH?: boolean;
   symbol?: string;
   address?: string;
+  chainId?: string;
+  isNative?: boolean;
 }
 
 export interface TransactionState {

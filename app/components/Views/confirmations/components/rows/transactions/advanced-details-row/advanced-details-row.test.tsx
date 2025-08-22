@@ -104,9 +104,7 @@ describe('AdvancedDetailsRow', () => {
       const swapsEnabledState = merge({}, generateContractInteractionState, {
         swaps: {
           featureFlags: {
-            smartTransactions: {
-              mobileActive: true,
-            },
+            smartTransactions: true,
           },
         },
       });

@@ -73,7 +73,11 @@ const UrlAutocomplete = forwardRef<
   const browserHistory = useSelector(selectBrowserHistoryWithType);
   const bookmarks = useSelector(selectBrowserBookmarksWithType);
   const initialFuseResults = useMemo(
-    () => [...browserHistory, ...bookmarks],
+    () =>
+      [...browserHistory, ...bookmarks].map((item) => ({
+        ...item,
+        name: item.name || item.url,
+      })) as FuseSearchResult[],
     [browserHistory, bookmarks],
   );
   const [fuseResults, setFuseResults] =
@@ -226,9 +230,12 @@ const UrlAutocomplete = forwardRef<
   useEffect(() => {
     const allUrls: FuseSearchResult[] = [
       ...dappsWithType,
-      ...browserHistory,
-      ...bookmarks,
-    ];
+      ...browserHistory.map((item) => ({
+        ...item,
+        name: item.name || item.url,
+      })),
+      ...bookmarks.map((item) => ({ ...item, name: item.name || item.url })),
+    ] as FuseSearchResult[];
 
     // Create the fuse search
     fuseRef.current = new Fuse(allUrls, {

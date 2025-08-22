@@ -2,6 +2,7 @@ import React from 'react';
 import renderWithProvider from '../../../util/test/renderWithProvider';
 import { backgroundState } from '../../../util/test/initial-root-state';
 import DiscoveryTab from './DiscoveryTab';
+import type { RootState } from '../../../reducers';
 import UrlAutocomplete, {
   AutocompleteSearchResult,
   UrlAutocompleteCategory,
@@ -43,22 +44,24 @@ jest.mock('@react-navigation/native', () => {
 
 const mockInitialState = {
   browser: {
-    activeTab: 1,
+    activeTab: '1',
     history: [],
     tabs: [
       {
-        id: 1,
+        id: '1',
         url: 'https://metamask.io',
-        image: '',
         isArchived: false,
       },
     ],
+    whitelist: [],
+    favicons: {},
+    visitedDappsByHostname: {},
   },
   bookmarks: [],
   engine: {
     backgroundState,
   },
-};
+} as unknown as Partial<RootState>;
 
 const mockProps = {
   id: 1,

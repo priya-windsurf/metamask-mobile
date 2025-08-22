@@ -230,7 +230,7 @@ export const BrowserTab: React.FC<BrowserTabProps> = React.memo(
      * Is the current tab the active tab
      */
     const isTabActive = useSelector(
-      (state: RootState) => state.browser.activeTab === tabId,
+      (state: RootState) => state.browser.activeTab === String(tabId),
     );
 
     /**
@@ -1609,4 +1609,5 @@ const mapDispatchToProps = (dispatch: Dispatch) => ({
   addToWhitelist: (url: string) => dispatch(addToWhitelist(url)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(BrowserTab);
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default connect(mapStateToProps, mapDispatchToProps)(BrowserTab as any);
