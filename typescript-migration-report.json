@@ -1,0 +1,2224 @@
+{
+  "totalFiles": 5258,
+  "jsFiles": [
+    {
+      "path": "actions/alert/index.js",
+      "lines": 16,
+      "category": "actions"
+    },
+    {
+      "path": "actions/bookmarks/index.js",
+      "lines": 14,
+      "category": "actions"
+    },
+    {
+      "path": "actions/browser/index.js",
+      "lines": 136,
+      "category": "actions"
+    },
+    {
+      "path": "actions/collectibles/index.js",
+      "lines": 27,
+      "category": "actions"
+    },
+    {
+      "path": "actions/infuraAvailability/index.js",
+      "lines": 17,
+      "category": "actions"
+    },
+    {
+      "path": "actions/modals/index.js",
+      "lines": 34,
+      "category": "actions"
+    },
+    {
+      "path": "actions/notification/index.js",
+      "lines": 103,
+      "category": "actions"
+    },
+    {
+      "path": "actions/privacy/index.js",
+      "lines": 21,
+      "category": "actions"
+    },
+    {
+      "path": "actions/settings/index.js",
+      "lines": 84,
+      "category": "actions"
+    },
+    {
+      "path": "actions/transaction/index.js",
+      "lines": 174,
+      "category": "actions"
+    },
+    {
+      "path": "actions/wizard/index.js",
+      "lines": 10,
+      "category": "actions"
+    },
+    {
+      "path": "components/Base/DetailsModal.js",
+      "lines": 190,
+      "category": "components"
+    },
+    {
+      "path": "components/Base/RangeInput.js",
+      "lines": 286,
+      "category": "components"
+    },
+    {
+      "path": "components/Base/RemoteImage/index.js",
+      "lines": 314,
+      "category": "components"
+    },
+    {
+      "path": "components/Base/StatusText.js",
+      "lines": 119,
+      "category": "components"
+    },
+    {
+      "path": "components/Base/TabBar.js",
+      "lines": 44,
+      "category": "components"
+    },
+    {
+      "path": "components/Nav/Main/MainNavigator.js",
+      "lines": 953,
+      "category": "components"
+    },
+    {
+      "path": "components/Nav/Main/RootRPCMethodsUI.js",
+      "lines": 605,
+      "category": "components"
+    },
+    {
+      "path": "components/Nav/Main/index.js",
+      "lines": 585,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/AccountApproval/index.js",
+      "lines": 426,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/AccountInfoCard/index.js",
+      "lines": 264,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/AccountOverview/index.js",
+      "lines": 473,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/ActionModal/ActionContent/index.js",
+      "lines": 207,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/ActionModal/index.js",
+      "lines": 183,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/ActionView/index.js",
+      "lines": 225,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/AddCustomToken/index.js",
+      "lines": 747,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/AddressInputs/index.js",
+      "lines": 637,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/AddressInputs/index.test.jsx",
+      "lines": 119,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/AnimatedSpinner/index.js",
+      "lines": 137,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/AnimatedTransactionModal/index.js",
+      "lines": 298,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/AssetList/index.js",
+      "lines": 96,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/BasicFunctionality/BasicFunctionality.test.js",
+      "lines": 14,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/BasicFunctionality/BasicFunctionalityModal/BasicFunctionalityModal.test.js",
+      "lines": 66,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/BrowserBottomBar/index.js",
+      "lines": 234,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Button/index.js",
+      "lines": 59,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/CollectibleContractElement/index.js",
+      "lines": 325,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/CollectibleContractInformation/index.js",
+      "lines": 237,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/CollectibleContractOverview/index.js",
+      "lines": 191,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/CollectibleContracts/index.js",
+      "lines": 661,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/CollectibleOverview/index.js",
+      "lines": 568,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Collectibles/index.js",
+      "lines": 245,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Confetti/index.js",
+      "lines": 27,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/CustomAlert/index.js",
+      "lines": 127,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/EditGasFee1559/index.js",
+      "lines": 1007,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/EditGasFeeLegacy/index.js",
+      "lines": 625,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/EthereumAddress/index.js",
+      "lines": 73,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/FadeAnimationView/index.js",
+      "lines": 134,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/FadeOutOverlay/index.js",
+      "lines": 64,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/FoxScreen/index.js",
+      "lines": 45,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/GlobalAlert/index.js",
+      "lines": 157,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/HintModal/index.js",
+      "lines": 133,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/ManageNetworks/ManageNetworks.test.js",
+      "lines": 70,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Navbar/index.js",
+      "lines": 2225,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Navbar/index.test.jsx",
+      "lines": 173,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/NavbarBrowserTitle/index.js",
+      "lines": 173,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/NavbarTitle/index.js",
+      "lines": 186,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/NavbarTitle/index.test.js",
+      "lines": 21,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/NetworkMainAssetLogo/index.js",
+      "lines": 56,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Notification/BaseNotification/index.js",
+      "lines": 223,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Notification/BaseNotification/index.test.jsx",
+      "lines": 47,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Notification/SimpleNotification/index.js",
+      "lines": 63,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Notification/TransactionNotification/index.js",
+      "lines": 479,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Notification/index.js",
+      "lines": 129,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/OnboardingWizard/Coachmark/index.js",
+      "lines": 440,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/OptinMetrics/index.js",
+      "lines": 691,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/PaymentRequest/index.js",
+      "lines": 975,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/PaymentRequestSuccess/index.js",
+      "lines": 422,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/PhishingModal/index.js",
+      "lines": 194,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/ProtectYourWalletModal/index.js",
+      "lines": 210,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/ReceiveRequest/index.js",
+      "lines": 311,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Screen/index.js",
+      "lines": 27,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/SeedphraseModal/index.js",
+      "lines": 126,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/SelectComponent/index.js",
+      "lines": 238,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/SettingsDrawer/index.js",
+      "lines": 144,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/SettingsNotification/index.js",
+      "lines": 111,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/SkipAccountSecurityModal/index.js",
+      "lines": 176,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/SliderButton/index.js",
+      "lines": 355,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/SlippageSlider/index.js",
+      "lines": 325,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/StyledButton/index.android.js",
+      "lines": 148,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/StyledButton/index.ios.js",
+      "lines": 105,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/StyledButton/index.js",
+      "lines": 11,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/QuotesView.js",
+      "lines": 2681,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/ActionAlert.js",
+      "lines": 158,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/ApprovalTransactionEditionModal.js",
+      "lines": 172,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/AssetSwapButton.js",
+      "lines": 72,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/GasEditModal.js",
+      "lines": 554,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/LoadingAnimation/backgroundShapes.js",
+      "lines": 62,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/LoadingAnimation/index.js",
+      "lines": 522,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/Onboarding.js",
+      "lines": 153,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/QuotesModal.js",
+      "lines": 509,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/QuotesSummary.js",
+      "lines": 123,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/SlippageModal.js",
+      "lines": 97,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/TokenIcon.js",
+      "lines": 174,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/TokenIcon.test.js",
+      "lines": 36,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/TokenImportModal.js",
+      "lines": 134,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/TokenSelectButton.js",
+      "lines": 36,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/TokenSelectButton.test.js",
+      "lines": 37,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/TokenSelectModal.js",
+      "lines": 566,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/index.js",
+      "lines": 1072,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/utils/index.js",
+      "lines": 276,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/utils/index.test.js",
+      "lines": 248,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/utils/useBalance.js",
+      "lines": 51,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/utils/useBlockExplorer.js",
+      "lines": 118,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/utils/useBlockExplorer.test.js",
+      "lines": 93,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/utils/useFetchTokenMetadata.js",
+      "lines": 58,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/SwitchCustomNetwork/index.js",
+      "lines": 75,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Tabs/TabCountIcon/index.js",
+      "lines": 69,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Tabs/index.js",
+      "lines": 360,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/TimeEstimateInfoModal/index.js",
+      "lines": 53,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/TokenImage/index.js",
+      "lines": 63,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/TransactionActionModal/TransactionActionContent/index.js",
+      "lines": 120,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/TransactionActionModal/index.js",
+      "lines": 104,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/TransactionElement/TransactionDetails/index.js",
+      "lines": 579,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/TransactionElement/index.js",
+      "lines": 727,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/TransactionElement/utils-gas.js",
+      "lines": 63,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/TransactionElement/utils.js",
+      "lines": 927,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/TransactionElement/utils.test.js",
+      "lines": 369,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/TransactionHeader/index.js",
+      "lines": 249,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Transactions/index.js",
+      "lines": 921,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/WarningExistingUserModal/index.js",
+      "lines": 118,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/WebsiteIcon/index.js",
+      "lines": 170,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/WebviewError/index.js",
+      "lines": 133,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/WebviewProgressBar/index.js",
+      "lines": 71,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/AccountBackupStep1/index.js",
+      "lines": 336,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/AccountBackupStep1B/index.js",
+      "lines": 425,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/ActivityView/index.js",
+      "lines": 234,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/AddBookmark/index.js",
+      "lines": 180,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/AddressQRCode/index.js",
+      "lines": 195,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Asset/index.js",
+      "lines": 810,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Asset/index.test.js",
+      "lines": 729,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Browser/index.js",
+      "lines": 514,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/ChoosePassword/index.js",
+      "lines": 1041,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Collectible/index.js",
+      "lines": 194,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/CollectibleView/index.js",
+      "lines": 150,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/EnterPasswordSimple/index.js",
+      "lines": 171,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/ErrorBoundary/index.js",
+      "lines": 524,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/GasEducationCarousel/index.js",
+      "lines": 420,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/ImportFromSecretRecoveryPhrase/index.js",
+      "lines": 1187,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/ImportPrivateKeySuccess/index.js",
+      "lines": 158,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/LockScreen/index.js",
+      "lines": 263,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/ManualBackupStep1/index.js",
+      "lines": 415,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/ManualBackupStep2/index.js",
+      "lines": 540,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/ManualBackupStep3/index.js",
+      "lines": 245,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/MediaPlayer/AndroidMediaPlayer.js",
+      "lines": 655,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/MediaPlayer/index.js",
+      "lines": 192,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/NavigationUnitTest/TestScreen1.test.js",
+      "lines": 13,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/NavigationUnitTest/TestScreen2.test.js",
+      "lines": 13,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/NavigationUnitTest/TestScreen3.test.js",
+      "lines": 11,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/NavigationUnitTest/index.js",
+      "lines": 71,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/OfflineMode/index.js",
+      "lines": 125,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Onboarding/index.js",
+      "lines": 826,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/ResetPassword/index.js",
+      "lines": 1070,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Settings/AdvancedSettings/index.js",
+      "lines": 575,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Settings/AppInformation/index.js",
+      "lines": 242,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Settings/Contacts/ContactForm/index.js",
+      "lines": 673,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Settings/Contacts/index.js",
+      "lines": 186,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Settings/GeneralSettings/index.js",
+      "lines": 544,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Settings/NetworksSettings/NetworkSettings/index.js",
+      "lines": 2661,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Settings/NetworksSettings/NetworkSettings/withIsOriginalNativeToken.js",
+      "lines": 30,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Settings/NetworksSettings/index.js",
+      "lines": 618,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/SimpleWebview/index.js",
+      "lines": 66,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/TermsAndConditions/index.js",
+      "lines": 68,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/TransactionSummary/index.js",
+      "lines": 160,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/TransactionsView/index.js",
+      "lines": 283,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/WalletConnectSessions/index.js",
+      "lines": 289,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/Approval/components/TransactionEditor/index.js",
+      "lines": 997,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/Approval/index.js",
+      "lines": 787,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/Approve/index.js",
+      "lines": 1004,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/ApproveView/Approve/index.js",
+      "lines": 1019,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/Send/index.js",
+      "lines": 846,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/SendFlow/AddressList/index.js",
+      "lines": 2,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/SendFlow/Amount/index.js",
+      "lines": 1615,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/SendFlow/Confirm/components/CustomGasModal/CustomGasModal.jsx",
+      "lines": 189,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/SendFlow/Confirm/components/CustomGasModal/index.js",
+      "lines": 2,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/SendFlow/Confirm/index.js",
+      "lines": 1655,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/SendFlow/ErrorMessage/index.js",
+      "lines": 67,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/SendFlow/SendTo/index.js",
+      "lines": 754,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/SendFlow/components/CustomNonceModal/index.js",
+      "lines": 270,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/Approval/ApprovalFlowLoader/index.js",
+      "lines": 54,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/ApproveTransactionReview/index.js",
+      "lines": 1400,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/ApproveTransactionReview/index.test.jsx",
+      "lines": 238,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/CustomNonce/index.js",
+      "lines": 58,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/EditGasFee1559Update/index.jsx",
+      "lines": 794,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/EditGasFeeLegacyUpdate/index.jsx",
+      "lines": 421,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/SignatureRequest/ExpandedMessage/index.js",
+      "lines": 134,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/SignatureRequest/index.js",
+      "lines": 408,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/TransactionReviewData/index.js",
+      "lines": 204,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/TransactionReviewDetailsCard/index.js",
+      "lines": 210,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/TransactionReviewDetailsCard/index.test.js",
+      "lines": 26,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/TransactionReviewEIP1559/index.js",
+      "lines": 458,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/TransactionReviewEIP1559Update/index.jsx",
+      "lines": 461,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/TransactionReviewEIP1559Update/index.test.jsx",
+      "lines": 104,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/TransactionReviewEIP1559Update/styles.js",
+      "lines": 53,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/TransactionReviewInformation/index.js",
+      "lines": 784,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/TransactionReviewSummary/index.js",
+      "lines": 164,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/index.js",
+      "lines": 760,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/index.test.jsx",
+      "lines": 359,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TypedSign/index.js",
+      "lines": 318,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/UpdateEIP1559Tx/index.jsx",
+      "lines": 270,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/WatchAssetRequest/index.js",
+      "lines": 254,
+      "category": "components"
+    },
+    {
+      "path": "constants/navigation.js",
+      "lines": 4,
+      "category": "other"
+    },
+    {
+      "path": "constants/network.js",
+      "lines": 122,
+      "category": "other"
+    },
+    {
+      "path": "core/BackgroundBridge/BackgroundBridge.js",
+      "lines": 1136,
+      "category": "core"
+    },
+    {
+      "path": "core/BackgroundBridge/BackgroundBridge.test.js",
+      "lines": 659,
+      "category": "core"
+    },
+    {
+      "path": "core/ClipboardManager.js",
+      "lines": 48,
+      "category": "core"
+    },
+    {
+      "path": "core/DrawerStatusTracker.js",
+      "lines": 34,
+      "category": "core"
+    },
+    {
+      "path": "core/EntryScriptWeb3.js",
+      "lines": 23,
+      "category": "core"
+    },
+    {
+      "path": "core/InpageBridgeWeb3.js",
+      "lines": 2,
+      "category": "core"
+    },
+    {
+      "path": "core/MobilePortStream.js",
+      "lines": 75,
+      "category": "core"
+    },
+    {
+      "path": "core/NotificationManager.js",
+      "lines": 555,
+      "category": "core"
+    },
+    {
+      "path": "core/Permissions/specifications.js",
+      "lines": 200,
+      "category": "core"
+    },
+    {
+      "path": "core/Permissions/specifications.test.js",
+      "lines": 162,
+      "category": "core"
+    },
+    {
+      "path": "core/PreventScreenshot.js",
+      "lines": 21,
+      "category": "core"
+    },
+    {
+      "path": "core/RPCMethods/eth-request-accounts.js",
+      "lines": 100,
+      "category": "core"
+    },
+    {
+      "path": "core/RPCMethods/index.js",
+      "lines": 14,
+      "category": "core"
+    },
+    {
+      "path": "core/RPCMethods/lib/ethereum-chain-utils.js",
+      "lines": 351,
+      "category": "core"
+    },
+    {
+      "path": "core/RPCMethods/wallet_addEthereumChain.js",
+      "lines": 287,
+      "category": "core"
+    },
+    {
+      "path": "core/RPCMethods/wallet_addEthereumChain.test.js",
+      "lines": 544,
+      "category": "core"
+    },
+    {
+      "path": "core/RPCMethods/wallet_switchEthereumChain.js",
+      "lines": 129,
+      "category": "core"
+    },
+    {
+      "path": "core/RPCMethods/wallet_switchEthereumChain.test.js",
+      "lines": 276,
+      "category": "core"
+    },
+    {
+      "path": "core/TransactionTypes.js",
+      "lines": 17,
+      "category": "core"
+    },
+    {
+      "path": "core/Vault.js",
+      "lines": 382,
+      "category": "core"
+    },
+    {
+      "path": "core/WalletConnect/WalletConnect.js",
+      "lines": 512,
+      "category": "core"
+    },
+    {
+      "path": "images/image-icons.js",
+      "lines": 86,
+      "category": "other"
+    },
+    {
+      "path": "lib/ens-ipfs/contracts/registry.js",
+      "lines": 109,
+      "category": "other"
+    },
+    {
+      "path": "lib/ens-ipfs/contracts/resolver.js",
+      "lines": 236,
+      "category": "other"
+    },
+    {
+      "path": "lib/ens-ipfs/resolver.js",
+      "lines": 106,
+      "category": "other"
+    },
+    {
+      "path": "lib/ppom/blockaid-version.js",
+      "lines": 1,
+      "category": "other"
+    },
+    {
+      "path": "lib/ppom/ppom.html.js",
+      "lines": 1,
+      "category": "other"
+    },
+    {
+      "path": "reducers/alert/index.js",
+      "lines": 29,
+      "category": "reducers"
+    },
+    {
+      "path": "reducers/bookmarks/index.js",
+      "lines": 12,
+      "category": "reducers"
+    },
+    {
+      "path": "reducers/browser/index.js",
+      "lines": 105,
+      "category": "reducers"
+    },
+    {
+      "path": "reducers/browser/index.test.js",
+      "lines": 70,
+      "category": "reducers"
+    },
+    {
+      "path": "reducers/collectibles/index.js",
+      "lines": 160,
+      "category": "reducers"
+    },
+    {
+      "path": "reducers/infuraAvailability/index.js",
+      "lines": 29,
+      "category": "reducers"
+    },
+    {
+      "path": "reducers/modals/index.js",
+      "lines": 63,
+      "category": "reducers"
+    },
+    {
+      "path": "reducers/notification/index.js",
+      "lines": 204,
+      "category": "reducers"
+    },
+    {
+      "path": "reducers/notification/notification.test.js",
+      "lines": 275,
+      "category": "reducers"
+    },
+    {
+      "path": "reducers/privacy/index.js",
+      "lines": 39,
+      "category": "reducers"
+    },
+    {
+      "path": "reducers/settings/index.js",
+      "lines": 75,
+      "category": "reducers"
+    },
+    {
+      "path": "reducers/swaps/index.js",
+      "lines": 475,
+      "category": "reducers"
+    },
+    {
+      "path": "reducers/transaction/index.js",
+      "lines": 171,
+      "category": "reducers"
+    },
+    {
+      "path": "reducers/wizard/index.js",
+      "lines": 23,
+      "category": "reducers"
+    },
+    {
+      "path": "selectors/permissions/index.js",
+      "lines": 47,
+      "category": "selectors"
+    },
+    {
+      "path": "selectors/permissions/index.test.js",
+      "lines": 149,
+      "category": "selectors"
+    },
+    {
+      "path": "store/migrations/000.js",
+      "lines": 22,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/001.js",
+      "lines": 24,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/002.js",
+      "lines": 24,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/003.js",
+      "lines": 35,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/004.js",
+      "lines": 69,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/005.js",
+      "lines": 20,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/006.js",
+      "lines": 18,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/007.js",
+      "lines": 45,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/008.js",
+      "lines": 45,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/009.js",
+      "lines": 8,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/010.js",
+      "lines": 9,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/011.js",
+      "lines": 8,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/012.js",
+      "lines": 27,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/013.js",
+      "lines": 56,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/014.js",
+      "lines": 10,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/015.js",
+      "lines": 17,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/016.js",
+      "lines": 9,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/017.js",
+      "lines": 7,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/018.js",
+      "lines": 7,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/019.js",
+      "lines": 7,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/019.test.js",
+      "lines": 24,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/020.js",
+      "lines": 42,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/020.test.js",
+      "lines": 289,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/021.js",
+      "lines": 21,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/021.test.js",
+      "lines": 53,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/022.js",
+      "lines": 14,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/022.test.js",
+      "lines": 22,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/023.js",
+      "lines": 192,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/023.test.js",
+      "lines": 433,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/024.js",
+      "lines": 49,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/024.test.js",
+      "lines": 91,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/025.js",
+      "lines": 32,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/025.test.js",
+      "lines": 73,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/026.js",
+      "lines": 52,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/026.test.js",
+      "lines": 84,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/027.js",
+      "lines": 59,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/027.test.js",
+      "lines": 263,
+      "category": "other"
+    },
+    {
+      "path": "store/migrations/028.test.js",
+      "lines": 118,
+      "category": "other"
+    },
+    {
+      "path": "util/ENSUtils.js",
+      "lines": 124,
+      "category": "util"
+    },
+    {
+      "path": "util/blockies.js",
+      "lines": 435,
+      "category": "util"
+    },
+    {
+      "path": "util/confirm-tx.js",
+      "lines": 169,
+      "category": "util"
+    },
+    {
+      "path": "util/confirmation/signatureUtils.js",
+      "lines": 145,
+      "category": "util"
+    },
+    {
+      "path": "util/confusables/index.js",
+      "lines": 35,
+      "category": "util"
+    },
+    {
+      "path": "util/conversion/index.js",
+      "lines": 285,
+      "category": "util"
+    },
+    {
+      "path": "util/conversions.js",
+      "lines": 238,
+      "category": "util"
+    },
+    {
+      "path": "util/conversions.test.js",
+      "lines": 13,
+      "category": "util"
+    },
+    {
+      "path": "util/custom-gas/index.js",
+      "lines": 151,
+      "category": "util"
+    },
+    {
+      "path": "util/dapp-url-list.js",
+      "lines": 483,
+      "category": "util"
+    },
+    {
+      "path": "util/date/index.js",
+      "lines": 94,
+      "category": "util"
+    },
+    {
+      "path": "util/device/index.js",
+      "lines": 98,
+      "category": "util"
+    },
+    {
+      "path": "util/etherscan.js",
+      "lines": 63,
+      "category": "util"
+    },
+    {
+      "path": "util/gasUtils.js",
+      "lines": 7,
+      "category": "util"
+    },
+    {
+      "path": "util/general/index.js",
+      "lines": 193,
+      "category": "util"
+    },
+    {
+      "path": "util/middlewares.js",
+      "lines": 118,
+      "category": "util"
+    },
+    {
+      "path": "util/networks/index.js",
+      "lines": 689,
+      "category": "util"
+    },
+    {
+      "path": "util/number/index.js",
+      "lines": 944,
+      "category": "util"
+    },
+    {
+      "path": "util/payment-link-generator.js",
+      "lines": 78,
+      "category": "util"
+    },
+    {
+      "path": "util/scaling.js",
+      "lines": 65,
+      "category": "util"
+    },
+    {
+      "path": "util/sentry/utils.js",
+      "lines": 614,
+      "category": "util"
+    },
+    {
+      "path": "util/streams.js",
+      "lines": 45,
+      "category": "util"
+    },
+    {
+      "path": "util/test/assetFileTransformer.js",
+      "lines": 13,
+      "category": "util"
+    },
+    {
+      "path": "util/test/contract-address-registry.js",
+      "lines": 29,
+      "category": "util"
+    },
+    {
+      "path": "util/test/ganache-seeder.js",
+      "lines": 90,
+      "category": "util"
+    },
+    {
+      "path": "util/test/ganache.js",
+      "lines": 64,
+      "category": "util"
+    },
+    {
+      "path": "util/test/network-store.js",
+      "lines": 110,
+      "category": "util"
+    },
+    {
+      "path": "util/test/smart-contracts.js",
+      "lines": 69,
+      "category": "util"
+    },
+    {
+      "path": "util/test/testSetup.js",
+      "lines": 581,
+      "category": "util"
+    },
+    {
+      "path": "util/test/utils.js",
+      "lines": 24,
+      "category": "util"
+    },
+    {
+      "path": "util/transactions/index.js",
+      "lines": 1712,
+      "category": "util"
+    },
+    {
+      "path": "util/walletconnect.js",
+      "lines": 13,
+      "category": "util"
+    }
+  ],
+  "tsFiles": 4943,
+  "migrationProgress": 94,
+  "byCategory": {
+    "actions": {
+      "js": 11,
+      "ts": 24
+    },
+    "components": {
+      "js": 189,
+      "ts": 3210
+    },
+    "other": {
+      "js": 46,
+      "ts": 809
+    },
+    "core": {
+      "js": 21,
+      "ts": 515
+    },
+    "reducers": {
+      "js": 14,
+      "ts": 31
+    },
+    "selectors": {
+      "js": 2,
+      "ts": 104
+    },
+    "util": {
+      "js": 32,
+      "ts": 250
+    }
+  },
+  "highImpactFiles": [
+    {
+      "path": "components/UI/Swaps/QuotesView.js",
+      "lines": 2681,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Settings/NetworksSettings/NetworkSettings/index.js",
+      "lines": 2661,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Navbar/index.js",
+      "lines": 2225,
+      "category": "components"
+    },
+    {
+      "path": "util/transactions/index.js",
+      "lines": 1712,
+      "category": "util"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/SendFlow/Confirm/index.js",
+      "lines": 1655,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/SendFlow/Amount/index.js",
+      "lines": 1615,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/ApproveTransactionReview/index.js",
+      "lines": 1400,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/ImportFromSecretRecoveryPhrase/index.js",
+      "lines": 1187,
+      "category": "components"
+    },
+    {
+      "path": "core/BackgroundBridge/BackgroundBridge.js",
+      "lines": 1136,
+      "category": "core"
+    },
+    {
+      "path": "components/UI/Swaps/index.js",
+      "lines": 1072,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/ResetPassword/index.js",
+      "lines": 1070,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/ChoosePassword/index.js",
+      "lines": 1041,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/ApproveView/Approve/index.js",
+      "lines": 1019,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/EditGasFee1559/index.js",
+      "lines": 1007,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/Approve/index.js",
+      "lines": 1004,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/Approval/components/TransactionEditor/index.js",
+      "lines": 997,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/PaymentRequest/index.js",
+      "lines": 975,
+      "category": "components"
+    },
+    {
+      "path": "components/Nav/Main/MainNavigator.js",
+      "lines": 953,
+      "category": "components"
+    },
+    {
+      "path": "util/number/index.js",
+      "lines": 944,
+      "category": "util"
+    },
+    {
+      "path": "components/UI/TransactionElement/utils.js",
+      "lines": 927,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Transactions/index.js",
+      "lines": 921,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/Send/index.js",
+      "lines": 846,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Onboarding/index.js",
+      "lines": 826,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Asset/index.js",
+      "lines": 810,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/EditGasFee1559Update/index.jsx",
+      "lines": 794,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/Approval/index.js",
+      "lines": 787,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/TransactionReviewInformation/index.js",
+      "lines": 784,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/index.js",
+      "lines": 760,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/SendFlow/SendTo/index.js",
+      "lines": 754,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/AddCustomToken/index.js",
+      "lines": 747,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Asset/index.test.js",
+      "lines": 729,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/TransactionElement/index.js",
+      "lines": 727,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/OptinMetrics/index.js",
+      "lines": 691,
+      "category": "components"
+    },
+    {
+      "path": "util/networks/index.js",
+      "lines": 689,
+      "category": "util"
+    },
+    {
+      "path": "components/Views/Settings/Contacts/ContactForm/index.js",
+      "lines": 673,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/CollectibleContracts/index.js",
+      "lines": 661,
+      "category": "components"
+    },
+    {
+      "path": "core/BackgroundBridge/BackgroundBridge.test.js",
+      "lines": 659,
+      "category": "core"
+    },
+    {
+      "path": "components/Views/MediaPlayer/AndroidMediaPlayer.js",
+      "lines": 655,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/AddressInputs/index.js",
+      "lines": 637,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/EditGasFeeLegacy/index.js",
+      "lines": 625,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Settings/NetworksSettings/index.js",
+      "lines": 618,
+      "category": "components"
+    },
+    {
+      "path": "util/sentry/utils.js",
+      "lines": 614,
+      "category": "util"
+    },
+    {
+      "path": "components/Nav/Main/RootRPCMethodsUI.js",
+      "lines": 605,
+      "category": "components"
+    },
+    {
+      "path": "components/Nav/Main/index.js",
+      "lines": 585,
+      "category": "components"
+    },
+    {
+      "path": "util/test/testSetup.js",
+      "lines": 581,
+      "category": "util"
+    },
+    {
+      "path": "components/UI/TransactionElement/TransactionDetails/index.js",
+      "lines": 579,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Settings/AdvancedSettings/index.js",
+      "lines": 575,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/CollectibleOverview/index.js",
+      "lines": 568,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/TokenSelectModal.js",
+      "lines": 566,
+      "category": "components"
+    },
+    {
+      "path": "core/NotificationManager.js",
+      "lines": 555,
+      "category": "core"
+    },
+    {
+      "path": "components/UI/Swaps/components/GasEditModal.js",
+      "lines": 554,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Settings/GeneralSettings/index.js",
+      "lines": 544,
+      "category": "components"
+    },
+    {
+      "path": "core/RPCMethods/wallet_addEthereumChain.test.js",
+      "lines": 544,
+      "category": "core"
+    },
+    {
+      "path": "components/Views/ManualBackupStep2/index.js",
+      "lines": 540,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/ErrorBoundary/index.js",
+      "lines": 524,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/components/LoadingAnimation/index.js",
+      "lines": 522,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Browser/index.js",
+      "lines": 514,
+      "category": "components"
+    },
+    {
+      "path": "core/WalletConnect/WalletConnect.js",
+      "lines": 512,
+      "category": "core"
+    },
+    {
+      "path": "components/UI/Swaps/components/QuotesModal.js",
+      "lines": 509,
+      "category": "components"
+    },
+    {
+      "path": "util/dapp-url-list.js",
+      "lines": 483,
+      "category": "util"
+    },
+    {
+      "path": "components/UI/Notification/TransactionNotification/index.js",
+      "lines": 479,
+      "category": "components"
+    },
+    {
+      "path": "reducers/swaps/index.js",
+      "lines": 475,
+      "category": "reducers"
+    },
+    {
+      "path": "components/UI/AccountOverview/index.js",
+      "lines": 473,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/TransactionReviewEIP1559Update/index.jsx",
+      "lines": 461,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/TransactionReviewEIP1559/index.js",
+      "lines": 458,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/OnboardingWizard/Coachmark/index.js",
+      "lines": 440,
+      "category": "components"
+    },
+    {
+      "path": "util/blockies.js",
+      "lines": 435,
+      "category": "util"
+    },
+    {
+      "path": "store/migrations/023.test.js",
+      "lines": 433,
+      "category": "other"
+    },
+    {
+      "path": "components/UI/AccountApproval/index.js",
+      "lines": 426,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/AccountBackupStep1B/index.js",
+      "lines": 425,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/PaymentRequestSuccess/index.js",
+      "lines": 422,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/EditGasFeeLegacyUpdate/index.jsx",
+      "lines": 421,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/GasEducationCarousel/index.js",
+      "lines": 420,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/ManualBackupStep1/index.js",
+      "lines": 415,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/SignatureRequest/index.js",
+      "lines": 408,
+      "category": "components"
+    },
+    {
+      "path": "core/Vault.js",
+      "lines": 382,
+      "category": "core"
+    },
+    {
+      "path": "components/UI/TransactionElement/utils.test.js",
+      "lines": 369,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Tabs/index.js",
+      "lines": 360,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/index.test.jsx",
+      "lines": 359,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/SliderButton/index.js",
+      "lines": 355,
+      "category": "components"
+    },
+    {
+      "path": "core/RPCMethods/lib/ethereum-chain-utils.js",
+      "lines": 351,
+      "category": "core"
+    },
+    {
+      "path": "components/Views/AccountBackupStep1/index.js",
+      "lines": 336,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/CollectibleContractElement/index.js",
+      "lines": 325,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/SlippageSlider/index.js",
+      "lines": 325,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TypedSign/index.js",
+      "lines": 318,
+      "category": "components"
+    },
+    {
+      "path": "components/Base/RemoteImage/index.js",
+      "lines": 314,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/ReceiveRequest/index.js",
+      "lines": 311,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/AnimatedTransactionModal/index.js",
+      "lines": 298,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/WalletConnectSessions/index.js",
+      "lines": 289,
+      "category": "components"
+    },
+    {
+      "path": "store/migrations/020.test.js",
+      "lines": 289,
+      "category": "other"
+    },
+    {
+      "path": "core/RPCMethods/wallet_addEthereumChain.js",
+      "lines": 287,
+      "category": "core"
+    },
+    {
+      "path": "components/Base/RangeInput.js",
+      "lines": 286,
+      "category": "components"
+    },
+    {
+      "path": "util/conversion/index.js",
+      "lines": 285,
+      "category": "util"
+    },
+    {
+      "path": "components/Views/TransactionsView/index.js",
+      "lines": 283,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/utils/index.js",
+      "lines": 276,
+      "category": "components"
+    },
+    {
+      "path": "core/RPCMethods/wallet_switchEthereumChain.test.js",
+      "lines": 276,
+      "category": "core"
+    },
+    {
+      "path": "reducers/notification/notification.test.js",
+      "lines": 275,
+      "category": "reducers"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/SendFlow/components/CustomNonceModal/index.js",
+      "lines": 270,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/UpdateEIP1559Tx/index.jsx",
+      "lines": 270,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/AccountInfoCard/index.js",
+      "lines": 264,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/LockScreen/index.js",
+      "lines": 263,
+      "category": "components"
+    },
+    {
+      "path": "store/migrations/027.test.js",
+      "lines": 263,
+      "category": "other"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/WatchAssetRequest/index.js",
+      "lines": 254,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/TransactionHeader/index.js",
+      "lines": 249,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Swaps/utils/index.test.js",
+      "lines": 248,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Collectibles/index.js",
+      "lines": 245,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/ManualBackupStep3/index.js",
+      "lines": 245,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/Settings/AppInformation/index.js",
+      "lines": 242,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/SelectComponent/index.js",
+      "lines": 238,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/ApproveTransactionReview/index.test.jsx",
+      "lines": 238,
+      "category": "components"
+    },
+    {
+      "path": "util/conversions.js",
+      "lines": 238,
+      "category": "util"
+    },
+    {
+      "path": "components/UI/CollectibleContractInformation/index.js",
+      "lines": 237,
+      "category": "components"
+    },
+    {
+      "path": "lib/ens-ipfs/contracts/resolver.js",
+      "lines": 236,
+      "category": "other"
+    },
+    {
+      "path": "components/UI/BrowserBottomBar/index.js",
+      "lines": 234,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/ActivityView/index.js",
+      "lines": 234,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/ActionView/index.js",
+      "lines": 225,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/Notification/BaseNotification/index.js",
+      "lines": 223,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/ProtectYourWalletModal/index.js",
+      "lines": 210,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/TransactionReviewDetailsCard/index.js",
+      "lines": 210,
+      "category": "components"
+    },
+    {
+      "path": "components/UI/ActionModal/ActionContent/index.js",
+      "lines": 207,
+      "category": "components"
+    },
+    {
+      "path": "components/Views/confirmations/legacy/components/TransactionReview/TransactionReviewData/index.js",
+      "lines": 204,
+      "category": "components"
+    },
+    {
+      "path": "reducers/notification/index.js",
+      "lines": 204,
+      "category": "reducers"
+    }
+  ]
+}

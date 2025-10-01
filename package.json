@@ -3,6 +3,8 @@
   "version": "7.50.1",
   "private": true,
   "scripts": {
+    "migration:track": "ts-node scripts/typescript-migration-tracker.ts",
+    "migration:report": "ts-node scripts/typescript-migration-tracker.ts && cat typescript-migration-report.md",
     "install:foundryup": "yarn mm-foundryup",
     "anvil": "node_modules/.bin/anvil",
     "audit:ci": "./scripts/yarn-audit.sh",
