@@ -47,6 +47,25 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'error',
         // Under discussion
         '@typescript-eslint/no-duplicate-enum-values': 'off',
+        '@typescript-eslint/explicit-function-return-type': [
+          'warn',
+          {
+            allowExpressions: true,
+            allowTypedFunctionExpressions: true,
+            allowHigherOrderFunctions: true,
+          },
+        ],
+        '@typescript-eslint/no-non-null-assertion': 'warn',
+        '@typescript-eslint/prefer-nullish-coalescing': 'warn',
+        '@typescript-eslint/prefer-optional-chain': 'warn',
+        '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
+        '@typescript-eslint/consistent-type-imports': [
+          'warn',
+          {
+            prefer: 'type-imports',
+            disallowTypeAnnotations: false,
+          },
+        ],
       },
     },
     {
@@ -282,5 +301,10 @@ module.exports = {
     radix: 0,
   },
 
-  ignorePatterns: ['wdio.conf.js', 'app/util/termsOfUse/termsOfUseContent.ts'],
+  ignorePatterns: [
+    'wdio.conf.js',
+    'app/util/termsOfUse/termsOfUseContent.ts',
+    'docs/typescript-templates/**/*',
+    'scripts/typescript-migration-tracker.ts',
+  ],
 };

@@ -10,7 +10,7 @@ const RULES: IRule[] = [
   {
     name: 'Check for js or jsx file being added',
     fn: preventJavaScriptFileAdditions,
-    docURL: '[WIP] No documentation exists for this rule yet.',
+    docURL: 'https://github.com/MetaMask/metamask-mobile/blob/main/docs/typescript-migration.md#fitness-function',
   },
 ];
 

@@ -150,3 +150,7 @@ CLAUDE.md
 /CLAUDE.md
 temp/
 /temp/
+
+# TypeScript migration tracking reports (generated files)
+typescript-migration-report.json
+typescript-migration-report.md
