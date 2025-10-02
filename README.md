@@ -12,6 +12,77 @@ To learn how to develop MetaMask-compatible applications, visit our [Developer D
 
 To learn how to contribute to the MetaMask codebase, visit our [Contributor Docs](https://github.com/MetaMask/contributor-docs).
 
+## About MetaMask Mobile
+
+MetaMask Mobile is a comprehensive React Native cryptocurrency wallet application that serves as your gateway to Web3. It enables users to securely store, manage, and interact with digital assets across multiple blockchain networks directly from their mobile devices.
+
+### Key Features
+
+**🔐 Multi-Chain Support**
+
+- Ethereum mainnet and testnets
+- Layer 2 networks (Arbitrum, Optimism, Polygon, Base, Linea, and more)
+- EVM-compatible chains
+- Bitcoin and Solana support via multichain architecture
+
+**🌐 DApp Integration**
+
+- Built-in Web3-enabled browser for seamless DApp interaction
+- WalletConnect protocol support for connecting to desktop DApps and services
+- MetaMask SDK integration for direct app-to-app connections
+- Permission management system using CAIP-25 for cross-chain access control
+
+**💎 Asset Management**
+
+- Comprehensive token and NFT management
+- Automatic token detection across supported networks
+- NFT collection viewing and management
+- Built-in swap aggregation for trading tokens
+- Bridge functionality for moving assets across chains
+
+**🔒 Security & Privacy**
+
+- Blockaid integration for real-time transaction threat detection
+- Hardware wallet support (Ledger, Keystone/QR-based wallets)
+- Biometric authentication (Face ID, Touch ID, fingerprint)
+- Secure key management with encrypted vault storage
+- Origin throttling to prevent spam and malicious requests
+
+**🔌 Extensibility**
+
+- Snaps support for extending wallet functionality with third-party plugins
+- Modular controller architecture for easy feature addition
+- Support for custom RPC endpoints and network configurations
+
+### Architecture
+
+MetaMask Mobile is built on a robust **Engine-based controller architecture** that manages all core functionality:
+
+- **Engine**: Central orchestrator managing the lifecycle of all controllers
+- **Controller System**: Modular controllers handle specific domains (KeyringController for accounts, NetworkController for chain management, TransactionController for transaction processing, etc.)
+- **Redux State Management**: Predictable state container for the entire application
+- **Background Bridge**: Secure communication layer between WebViews and native wallet functionality
+- **RPC Method Middleware**: Request validation, routing, and permission checking for DApp interactions
+
+### Technology Stack
+
+- **Framework**: React Native with Expo for rapid development
+- **Language**: TypeScript for type safety and better developer experience
+- **State Management**: Redux with Redux Saga for side effects
+- **Testing**: Jest for unit tests, Detox for E2E testing, Storybook for component development
+- **Build Tools**: Fastlane (iOS), Gradle (Android), GitHub Actions for CI/CD
+- **Platforms**: iOS and Android with platform-specific optimizations
+
+### Who Is This For?
+
+MetaMask Mobile is designed for:
+
+- **Crypto enthusiasts** who want secure mobile access to their digital assets
+- **DeFi users** who need to interact with decentralized finance protocols on the go
+- **NFT collectors** managing their digital collectibles
+- **Developers** building or testing DApps with mobile wallet integration
+- **Anyone** seeking a secure, feature-rich gateway to the Web3 ecosystem
+
 ## Documentation
 
 - [Architecture](./docs/readme/architecture.md)
